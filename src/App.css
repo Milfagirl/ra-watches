@@ -1,38 +1,58 @@
 .App {
   text-align: center;
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  padding-top: 100px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  width: 800px;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+form input {
+  width: 200px;
+  display: block;
+  height: 30px;
+}
+button {
+  height: 30px;
+}
+.div-clock {
+  text-align: left;
+  margin: 10px auto;
+  width: 800px;
+  display: flex;
+  justify-content: space-around;
+}
+.clock {
+  width: 100px;
+  text-align: center;
+  position: relative;
+}
+.timer {
+  border: 1px solid rgb(167, 165, 165);
+  text-align: center;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  font-size: large;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clock button {
+position: absolute;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+top: 20px;
+right: 0;
+text-align: center;
+box-sizing: border-box;
 }
